@@ -1,0 +1,123 @@
+:root{
+    /*colors*/
+--Pale: #e0e8ff;
+--Bright: #3829e0;
+
+--Very-pale: #f5f7ff;
+--Desaturated: #7280a7;
+--Dark:	#1f2f56;
+/*font-family*/
+--Red-Hat-Display: 'Red Hat Display', sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:var(--Red-Hat-Display);
+}
+
+button{
+    border: none;
+    background: none;
+    width: 100%;
+    font-family: var(--Red-Hat-Display);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 12px 24px;
+    margin: 5px 0;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Pale)
+}
+
+.order-card{
+    width: 300px;
+    background-color: var(--Very-pale);
+    border-radius: 20px;
+}
+
+.order-card__img{
+    background-image: url('../Imagenes/illustration-hero.svg');
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 147px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;      
+}
+
+.order-card__info{
+    padding: 15px 20px;
+}
+
+.info__title{
+    font-weight: 900;
+    color: var(--Dark) ;
+    text-align: center;
+    margin-top: 15px;
+}
+.info__description{
+    margin: 0.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color:var(--Desaturated);
+    margin-top: 15px;
+}
+.info__purchase {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    background-color: #eceffd;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.purchase-detail {
+    text-align: left;
+}
+.purchase-detail h2 {
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--Dark);
+}
+
+.purchase-detail span{
+    color: var(--Desaturated);
+}
+
+.purchase-change {
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.button-primary {
+    background-color: var(--Bright);
+    border-radius: 10px;
+    color: var(--Very-pale);
+    box-shadow: 1px 10px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button-secondary {
+    color: var(--Desaturated);
+    font-weight: 800;
+}
+
+.button-secondary:hover {
+    text-decoration: underline;
+}
+
+
+
